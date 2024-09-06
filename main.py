@@ -12,9 +12,13 @@ WORLD_HEIGHT = 64
 
 SPEED_X = 10
 SPEED_Y = 0
+SPEED_X2 = -10
+SPEED_Y2 = 0
+
+SPEEDS = flow.tensor([SPEED_X, SPEED_Y])
 
 velocity = flow.StaggeredGrid(
-    (SPEED_X, SPEED_Y),
+    SPEEDS,
     flow.ZERO_GRADIENT,
     x=WORLD_WIDTH,
     y=WORLD_HEIGHT,

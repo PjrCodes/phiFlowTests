@@ -8,6 +8,10 @@ def step(v, dt=.5):
     return v
 
 v0 = CenteredGrid(Noise(vector='x,y'), PERIODIC, x=64, y=64, bounds=Box(x=40, y=20))
+
+print(Noise(vector='x,y'))
 v_trj = iterate(step, batch(time=100), v0)
 plot(v_trj.as_points(), animate='time')
 plt.show()
+
+
