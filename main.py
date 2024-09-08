@@ -26,9 +26,9 @@ velocity = flow.StaggeredGrid(
 )
 
 
-CUBOID_1 = flow.geom.Box(flow.vec(x=15, y=32), flow.vec(x=20, y=42))
-CUBOID_2 = flow.geom.Box(flow.vec(x=15, y=50), flow.vec(x=30, y=60))
-CUBOID_3 = flow.geom.Box(flow.vec(x=10, y=10), flow.vec(x=20, y=20))
+CUBOID_1 = flow.Box(flow.vec(x=15, y=32), flow.vec(x=20, y=42))
+CUBOID_2 = flow.Box(flow.vec(x=15, y=50), flow.vec(x=30, y=60))
+CUBOID_3 = flow.Box(flow.vec(x=10, y=10), flow.vec(x=20, y=20))
 
 # CUTU = flow.geom.Cuboid(flow.vec(x=15, y=32), x=5, y=10)
 # CUTD = flow.geom.Cuboid(flow.vec(x=15, y=50), x=15, y=10)
